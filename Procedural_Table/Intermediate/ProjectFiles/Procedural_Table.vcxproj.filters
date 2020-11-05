@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Procedural_Table.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{54E39484-EC7F-403E-AA63-DACF3657FEAB}</UniqueIdentifier>
+      <UniqueIdentifier>{1F3D96F8-2E18-49D2-AE68-1D5DFA255259}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Procedural_Table.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{CBCA3131-6CD5-49A2-BA95-2854E4F13637}</UniqueIdentifier>
+      <UniqueIdentifier>{25C70B5F-3B50-497F-B85C-2DE4DFC07720}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,8 +24,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Procedural_Table">
-      <UniqueIdentifier>{39E6BF26-9CFD-45E6-8AB3-7B469D144972}</UniqueIdentifier>
+      <UniqueIdentifier>{8B29D4E8-CF98-4B4E-98F6-2D6328D46FF9}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Procedural_Table\CameraPawn.cpp">
+      <Filter>Source\Procedural_Table</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Procedural_Table\CameraPawn.h">
+      <Filter>Source\Procedural_Table</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Procedural_Table\Procedural_Table.Build.cs">
       <Filter>Source\Procedural_Table</Filter>
     </None>

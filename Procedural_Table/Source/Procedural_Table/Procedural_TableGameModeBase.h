@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "CameraPawn.h"
 #include "Procedural_TableGameModeBase.generated.h"
 
 /**
@@ -14,4 +15,6 @@ class PROCEDURAL_TABLE_API AProcedural_TableGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+public:
+	AProcedural_TableGameModeBase();
 };
