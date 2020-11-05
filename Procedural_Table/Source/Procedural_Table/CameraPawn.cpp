@@ -8,7 +8,7 @@ ACameraPawn::ACameraPawn()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	bUseControllerRotationYaw = true;
+	//bUseControllerRotationYaw = true;
 
 	/* Components Initialization */
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
@@ -30,6 +30,7 @@ ACameraPawn::ACameraPawn()
 	//Camera
 	PlayerCamera->SetupAttachment(CameraSpringArm, USpringArmComponent::SocketName);
 
+	//Movement Variables
 	CameraInput = FVector2D(0.0f, 0.0f);
 	MovementUnits = 450.0f;
 
@@ -60,7 +61,7 @@ void ACameraPawn::Tick(float DeltaTime)
 		ZoomFactor -= DeltaTime / 0.25f;
 	}
 	ZoomFactor = FMath::Clamp<float>(ZoomFactor, 0.0f, 1.0f);
-	PlayerCamera->FieldOfView = FMath::Lerp<float>(90.0f, 60.0f, ZoomFactor);
+	PlayerCamera->FieldOfView = FMath::Lerp<float>(100.0f, 40.0f, ZoomFactor);
 	CameraSpringArm->TargetArmLength = FMath::Lerp<float>(400.0f, 300.0f, ZoomFactor);
 
 	/* Camera Rotation */
@@ -81,10 +82,30 @@ void ACameraPawn::Tick(float DeltaTime)
 		//Scale  movement input axis values by 100 units per second
 		MovementInput = MovementInput.GetSafeNormal() * MovementUnits;
 		FVector NewLocation = GetActorLocation();
+		
+		if (NewLocation.X < 0.0f)
+		{
+			NewLocation.X = 1.0f;
+		}
+		else if (NewLocation.X > 500.f)
+		{
+			NewLocation.X = 499.0f;
+		}
 		NewLocation += GetActorForwardVector() * MovementInput.X * DeltaTime;
+
+		//Apply boundaries upper and lower to Y Axis
+		if (NewLocation.Y < 0.0f)
+		{
+			NewLocation.Y = 1.0f;
+		}
+		else if (NewLocation.Y > 1200.f)
+		{
+			NewLocation.Y = 1199.0f;
+		}
+
 		NewLocation += GetActorRightVector() * MovementInput.Y * DeltaTime;
 		
-		//Apply boundaries upper and lower
+		//Apply boundaries upper and lower to Z Axis
 		if (NewLocation.Z > 500.0f)
 		{
 			NewLocation.Z = 499.0f;
@@ -94,7 +115,7 @@ void ACameraPawn::Tick(float DeltaTime)
 			NewLocation.Z = 1.0f;
 		}
 		NewLocation += GetActorUpVector() * MovementInput.Z * DeltaTime;
-		
+
 		SetActorLocation(NewLocation);
 	}
 
