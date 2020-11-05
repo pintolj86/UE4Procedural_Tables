@@ -1,0 +1,3 @@
+C:\Users\LuisJ\Desktop\Unreal\UE4Procedural_Tables\Procedural_Table\Intermediate\Build\Win64\UE4Editor\Development\Procedural_Table\Definitions.Procedural_Table.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Procedural_Table",
+			"Path": "C:\\Users\\LuisJ\\Desktop\\Unreal\\UE4Procedural_Tables\\Procedural_Table\\Source\\Procedural_Table.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Procedural_TableEditor",
+			"Path": "C:\\Users\\LuisJ\\Desktop\\Unreal\\UE4Procedural_Tables\\Procedural_Table\\Source\\Procedural_TableEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

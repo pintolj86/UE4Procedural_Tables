@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\LuisJ\\Desktop\\Unreal\\UE4Procedural_Tables\\Procedural_Table\\Source\\Procedural_Table\\Procedural_Table.Build.cs",
+		"C:\\Users\\LuisJ\\Desktop\\Unreal\\UE4Procedural_Tables\\Procedural_Table\\Source\\Procedural_Table.Target.cs",
+		"C:\\Users\\LuisJ\\Desktop\\Unreal\\UE4Procedural_Tables\\Procedural_Table\\Source\\Procedural_TableEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.3"
+}
