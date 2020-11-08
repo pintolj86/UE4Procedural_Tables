@@ -5,5 +5,5 @@
 
 AProcedural_TableGameModeBase::AProcedural_TableGameModeBase()
 {
-    DefaultPawnClass = ACameraPawn::StaticClass();
+    //DefaultPawnClass = ACameraPawn::StaticClass();
 }
