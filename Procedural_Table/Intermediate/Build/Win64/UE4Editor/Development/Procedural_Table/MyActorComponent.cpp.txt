@@ -1,3 +1,0 @@
-C:\Users\LuisJ\Desktop\Unreal\UE4Procedural_Tables\Procedural_Table\Intermediate\Build\Win64\UE4Editor\Development\Procedural_Table\Definitions.Procedural_Table.h
-C:\Users\LuisJ\Desktop\Unreal\UE4Procedural_Tables\Procedural_Table\Source\Procedural_Table\MyActorComponent.h
-C:\Users\LuisJ\Desktop\Unreal\UE4Procedural_Tables\Procedural_Table\Intermediate\Build\Win64\UE4Editor\Inc\Procedural_Table\MyActorComponent.generated.h
