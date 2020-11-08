@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Procedural_Table.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1F3D96F8-2E18-49D2-AE68-1D5DFA255259}</UniqueIdentifier>
+      <UniqueIdentifier>{A0F38591-3334-4593-8363-875564206D0F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Procedural_Table.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{25C70B5F-3B50-497F-B85C-2DE4DFC07720}</UniqueIdentifier>
+      <UniqueIdentifier>{16C6C03D-AF79-4FCF-9C28-F3D124729FD7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,13 +23,28 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\Procedural_Table">
-      <UniqueIdentifier>{8B29D4E8-CF98-4B4E-98F6-2D6328D46FF9}</UniqueIdentifier>
+      <UniqueIdentifier>{C2D6F418-BE8E-44FD-90F1-6A9934116E09}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Procedural_Table\CameraPawn.cpp">
       <Filter>Source\Procedural_Table</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Procedural_Table\CameraPawn.h">
+      <Filter>Source\Procedural_Table</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Procedural_Table\Chair.cpp">
+      <Filter>Source\Procedural_Table</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Procedural_Table\Chair.h">
+      <Filter>Source\Procedural_Table</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Procedural_Table\CubeGenerator.cpp">
+      <Filter>Source\Procedural_Table</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Procedural_Table\CubeGenerator.h">
       <Filter>Source\Procedural_Table</Filter>
     </ClInclude>
     <None Include="..\..\Source\Procedural_Table\Procedural_Table.Build.cs">
@@ -45,6 +60,12 @@
       <Filter>Source\Procedural_Table</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Procedural_Table\Procedural_TableGameModeBase.h">
+      <Filter>Source\Procedural_Table</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Procedural_Table\SpawnController.cpp">
+      <Filter>Source\Procedural_Table</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Procedural_Table\SpawnController.h">
       <Filter>Source\Procedural_Table</Filter>
     </ClInclude>
   </ItemGroup>
